@@ -27,8 +27,8 @@ RUN apt-get update -q \
   && echo "tlpdbopt_desktop_integration 1" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_file_assocs 1" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_generate_updmap 0" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "tlpdbopt_install_docfiles 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "tlpdbopt_install_srcfiles 1" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "tlpdbopt_install_docfiles 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "tlpdbopt_install_srcfiles 0" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_post_code 1" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_sys_bin /usr/local/bin" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_sys_info /usr/local/share/info" >> /tmp/install-tl-unx/texlive.profile \
