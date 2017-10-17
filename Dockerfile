@@ -57,23 +57,23 @@ RUN apt-get update -q \
   && echo "tlpdbopt_sys_info /usr/local/share/info" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_sys_man /usr/local/share/man" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_w32_multi_user 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langarabic 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langchinese 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langcjk 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langcyrillic 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langczechslovak 1" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langarabic 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langchinese 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langcjk 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langcyrillic 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langczechslovak 0" >> /tmp/install-tl-unx/texlive.profile \
   && echo "collection-langenglish 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langeuropean 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langfrench 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langgerman 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langgreek 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langitalian 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langjapanese 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langkorean 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langother 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langpolish 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langportuguese 1" >> /tmp/install-tl-unx/texlive.profile \
-  && echo "collection-langspanish 1" >> /tmp/install-tl-unx/texlive.profile
+  && echo "collection-langeuropean 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langfrench 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langgerman 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langgreek 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langitalian 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langjapanese 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langkorean 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langother 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langpolish 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langportuguese 0" >> /tmp/install-tl-unx/texlive.profile \
+  && echo "collection-langspanish 0" >> /tmp/install-tl-unx/texlive.profile
 
 RUN ["/tmp/install-tl-unx/install-tl", "--profile=/tmp/install-tl-unx/texlive.profile"]
 
