@@ -57,7 +57,6 @@ RUN apt-get update -q \
   && echo "tlpdbopt_sys_info /usr/local/share/info" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_sys_man /usr/local/share/man" >> /tmp/install-tl-unx/texlive.profile \
   && echo "tlpdbopt_w32_multi_user 1" >> /tmp/install-tl-unx/texlive.profile \
-  # Languages can be configured here
   && echo "collection-langarabic 1" >> /tmp/install-tl-unx/texlive.profile \
   && echo "collection-langchinese 1" >> /tmp/install-tl-unx/texlive.profile \
   && echo "collection-langcjk 1" >> /tmp/install-tl-unx/texlive.profile \
